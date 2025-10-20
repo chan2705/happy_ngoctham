@@ -34,9 +34,13 @@
 
         .center-message {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            top: 30px; 
+
+            /* Vẫn giữ nguyên việc căn giữa theo chiều ngang */
+            left: 50%; 
+
+            /* 2. Chỉ dịch chuyển theo chiều ngang, không dịch chuyển dọc */
+            transform: translate(-50%, 0); 
             background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 240, 245, 0.9));
             padding: 40px 50px;
             border-radius: 30px;
@@ -118,9 +122,9 @@
 
         .popup {
             position: fixed;
-            top: 30px;
-            left: 50%; 
-            transform: translate(-50%, 0) scale(0.8); 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
             background: linear-gradient(135deg, #ffffff 0%, #fff5f8 100%);
             border-radius: 25px;
             box-shadow: 0 25px 80px rgba(216, 27, 96, 0.4);

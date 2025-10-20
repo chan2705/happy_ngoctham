@@ -118,9 +118,14 @@
 
         .popup {
             position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0.8);
+            /* 1. Đẩy popup xuống một khoảng nhỏ từ cạnh trên, thay vì 50% */
+            top: 30px; 
+
+            /* Vẫn giữ nguyên căn giữa theo chiều ngang */
+            left: 50%; 
+            
+            /* 2. Chỉ dịch chuyển theo chiều ngang (-50%), không dịch chuyển chiều dọc (0) */
+            transform: translate(-50%, 0) scale(0.8); 
             background: linear-gradient(135deg, #ffffff 0%, #fff5f8 100%);
             border-radius: 25px;
             box-shadow: 0 25px 80px rgba(216, 27, 96, 0.4);

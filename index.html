@@ -34,7 +34,7 @@
 
         .center-message {
             position: absolute;
-            top: 30px; 
+            top: 25vh; 
 
             /* Vẫn giữ nguyên việc căn giữa theo chiều ngang */
             left: 50%; 
@@ -61,11 +61,11 @@
 
             0%,
             100% {
-                transform: translate(-50%, -50%) scale(1);
+                transform: translate(-50%, 0) scale(1);
             }
 
             50% {
-                transform: translate(-50%, -50%) scale(1.05);
+                transform: translate(-50%, 00) scale(1.05);
             }
         }
 
@@ -317,6 +317,8 @@
         ---------------------------------- */
         @media (max-width: 768px) {
             .center-message {
+                top:25vh;
+                transform:translate(-50%,0);
                 width: calc(100% - 20px);
                 max-width: none;
                 padding: 20px 15px;
